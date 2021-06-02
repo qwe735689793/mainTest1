@@ -39,7 +39,6 @@ public class rocketMQTest {
         mesList.add("妈妈");
         mesList.add("爷爷");
         mesList.add("奶奶");
-
     }
 
     @RequestMapping("/text/rocketmq")
@@ -88,6 +87,6 @@ public class rocketMQTest {
     //测试高并发
     @RequestMapping("/order/message")
     public String message() {
-        return "测试高并发";
+        return "测试高98并819发";
     }
 }

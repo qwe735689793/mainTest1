@@ -1,5 +1,6 @@
 package com.mhj.order.modules.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.fastjson.JSON;
 import com.mhj.order.modules.entity.Order;
 import com.mhj.order.modules.service.MainApi;
@@ -47,6 +48,7 @@ public class orderController {
     }
 
     @RequestMapping("/order/message")
+    @SentinelResource(value = "hello")
     public String message() {
         return "高并发下的问题测试";
     }

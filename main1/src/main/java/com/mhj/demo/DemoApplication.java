@@ -11,7 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @ServletComponentScan
 @EnableSwagger2
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 public class DemoApplication {
 
     public static void main(String[] args) {

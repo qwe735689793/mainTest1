@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @createDate 2021/4/9 14:16
  **/
 @Component
-@RocketMQMessageListener(topic ="topic_family",consumerGroup = "test_consumer")
+@RocketMQMessageListener(consumerGroup = "test_consumer",topic ="topic_family")
 public class Consumer implements RocketMQListener<String> {
     @Override
     public void onMessage(String s) {
